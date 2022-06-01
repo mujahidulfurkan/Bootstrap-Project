@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="form-validation.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DevMujahid</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Service
+              </a>
+              <ul
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white" href="#">Web Design</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#"
+                    >Grapics Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Video Editing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#"
+                    >Desigal Marketing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Portfolio</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Slider Secton -->
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active single-img">
+              <img src="images/bg1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block slider-text">
+                <h5>Desital Marketing</h5>
+                <p>
+                  Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item single-img">
+              <img src="images/bg2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block slider-text">
+                <h5>Web Developmet</h5>
+                <p>
+                  Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item single-img">
+              <img src="images/bg3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block slider-text">
+                <h5>Video Editing</h5>
+                <p>
+                  Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item single-img">
+              <img src="images/bg4.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block slider-text">
+                <h5>Grapics Design</h5>
+                <p>
+                  Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.Some representative placeholder content for the first
+                  slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="container-fluid">
+        <div class="row main-about p-4">
+          <h1 class="text-center mb-4 mt-2 text-dark">About Us</h1>
+          <div class="col-6 about-img">
+            <img src="images/about.svg" alt="" class="container-fluid" />
+          </div>
+          <div class="col-6 about-text">
+            <h2>DevMujahid Softwares</h2>
+            <span>Let's Create For You</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              repellat deserunt fuga voluptatibus veniam fugit similique aliquid
+              sint fugiat ut doloribus reprehenderit ipsum ratione voluptates
+              quis perspiciatis sapiente quos itaque, hic quo laboriosam
+              nesciunt molestias quod doloremque. Explicabo dicta perferendis
+              facilis obcaecati error delectus impedit itaque sit, libero esse
+              quis!
+            </p>
+            <button type="button" class="btn btn-outline-dark">Hire Me</button>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section -->
+      <section class="container-fluid py-5">
+        <div class="service-text">
+          <h2 class="text-center">Our Service</h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum
+            vitae sit deserunt velit laboriosam pariatur quaerat sed totam, nisi
+            ipsum vero molestiae vel repellendus? Similique eligendi repellat
+            velit maiores!
+          </p>
+        </div>
+
+        <div class="row d-flex justify-content-around my-4">
+          <div class="card col-3 single-card" style="width: 18rem">
+            <img
+              src="icons/website.png"
+              class="card-img-top container"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content....
+              </p>
+              <a href="#" class="btn btn-outline-dark px-4">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="card col-3 single-card" style="width: 18rem">
+            <img
+              src="icons/design.png"
+              class="card-img-top container"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grapics Design</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content....
+              </p>
+              <a href="#" class="btn btn-outline-dark px-4">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="card col-3 single-card" style="width: 18rem">
+            <img
+              src="icons/idea.png"
+              class="card-img-top container"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Degital Marketing</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content....
+              </p>
+              <a href="#" class="btn btn-outline-dark px-4">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="card col-3 single-card" style="width: 18rem">
+            <img
+              src="icons/editing.png"
+              class="card-img-top container"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Video Editign</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content....
+              </p>
+              <a href="#" class="btn btn-outline-dark px-4">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Section -->
+      <section class="skill py-3 px-4">
+        <h2 class="text-center">Skill</h2>
+        <div class="row my-3">
+          <div class="col-6 px-4">
+            <div class="progress-text"><h6>HTML</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 99%"
+                aria-valuenow="99"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                99%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>CSS</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>BOOTSTRAP</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>JAVASCRIPT</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 px-4">
+            <div class="progress-text"><h6>JQUERY</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 85%"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                85%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>REACT</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>PHP</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 55%"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                55%
+              </div>
+            </div>
+
+            <div class="progress-text"><h6>WORDPRESS</h6></div>
+            <div class="progress mb-4">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                60%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Details Section -->
+      <section class="p-4 details">
+        <h2 class="text-center mb-3">QN/A</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Web Design & Developmet
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Grapics Design
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Degital Marketing
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Video Editing
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Contact Section -->
+      <section class="container-fluid p-4 contact">
+        <div class="py-3 text-center">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-6 d-flex align-content-center">
+            <img src="images/contact.svg" alt="" class="container" />
+          </div>
+
+          <div class="col-6">
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="Enter Your name"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid full name is required.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Your Email"
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Enter Your Address"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your address.</div>
+                </div>
+                <div class="col-12">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    placeholder="Write Your messasge"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    cols="5"
+                  ></textarea>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="form-check mb-2">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="save-info"
+                />
+                <label class="form-check-label" for="save-info"
+                  >Save this information for next time</label
+                >
+              </div>
+              <button
+                class="w-100 btn btn-outline-dark btn-lg"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+
+          <div class="container">
+            <footer class="pt-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Subscribe to our YouTube Channel</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="icons/twitter.svg"></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="icons/instagram.svg"></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="icons/facebook.svg"></a></li>
+                </ul>
+              </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form-validation.js"></script>
+  </body>
+</html>
